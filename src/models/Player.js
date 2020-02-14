@@ -1,16 +1,16 @@
-const { Schema, model } = require('mongoose')
+const { Schema, model } = require('mongoose');
 
 const playerSchema = new Schema({
-    name: {
-        type: String, 
-        required: true
-    },
-    score: {
-        type: Number,
-        required: true
-    }
+  name: {
+    type: String,
+    required: true,
+  },
+  score: {
+    type: Number,
+    required: true,
+  },
 }, {
-    timestamps: true
-})
+  timestamps: true,
+});
 
-module.exports = model('Player', playerSchema)
+module.exports = model('Player', playerSchema);
